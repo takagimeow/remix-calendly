@@ -1,0 +1,48 @@
+{
+  "name": "remix-calendly",
+  "version": "1.0.0",
+  "description": "The full-stack calendar library similar to a Calendly calendar component, designed to be compatible with Remix",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "./dist/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/takagimeow/remix-calendly.git"
+  },
+  "bugs": {
+    "url": "https://github.com/takagimeow/remix-calendly/issues"
+  },
+  "scripts": {
+    "build": "tsup ./src/index.ts --format cjs,esm --dts --external react",
+    "dev": "tsup ./src/index.ts --format esm,cjs --watch --dts --external react",
+    "lint": "eslint *.ts*",
+    "tsc": "tsc",
+    "test": "vitest run"
+  },
+  "keywords": [
+    "remix",
+    "react",
+    "calendar",
+    "calendly"
+  ],
+  "author": "Keisuke Takagi <mit@takagi.app>",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=16.8"
+  },
+  "devDependencies": {
+    "@types/react": ">=16.8",
+    "@types/react-dom": ">=16.8",
+    "c8": "^7.13.0",
+    "eslint": "^8.37.0",
+    "eslint-config-custom": "^0.0.0",
+    "react": ">=16.8",
+    "tsconfig": "^7.0.0",
+    "tsup": "^6.7.0",
+    "typescript": "^5.0.3",
+    "vitest": "^0.29.8"
+  }
+}
