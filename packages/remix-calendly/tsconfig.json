@@ -1,0 +1,12 @@
+{
+  "extends": "tsconfig/react-library.json",
+  "compilerOptions": {
+    "target": "ES2019",
+    "jsx": "react-jsx",
+    "module": "CommonJS",
+    "declaration": true,
+    "outDir": "./tsc/",
+  },
+  "include": ["."],
+  "exclude": ["dist", "build", "node_modules"]
+}
